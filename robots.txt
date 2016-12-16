@@ -1,0 +1,44 @@
+User-agent: *
+Disallow: /images
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: Webupd
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: FrontPage
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: Ask Jeeves
+Disallow: /
+
+User-agent: msnbot
+Disallow: /
+
+User-agent: Pompos
+Disallow: /
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: Geona
+Disallow: /

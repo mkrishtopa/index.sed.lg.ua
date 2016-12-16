@@ -1,0 +1,53 @@
+/*
+ (C)2005-2006 Michael Krishtopa aka Theo
+ theo at heddex dot com
+*/
+
+body {
+  font: 69% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: Black;
+  margin: 0;
+  padding: 0;
+}
+td {
+  vertical-align: top;
+}
+dt {
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+#objectinfo {
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+#objectinfo td {
+  padding: 1em 1em 0 0;
+}
+.databit {
+  font-weight: bold;
+}
+#objectinfo a {
+  font-weight: normal;
+}
+#description {
+  text-align: justify;
+}
+#description p {
+  text-indent: 1em;
+}
+
+#print_page,
+.content .firmlogo,
+#column_left,
+#breadcrumbs,
+#message,
+#index_advert,
+.advertBlock,
+#viewcounter,
+.visualClear,
+#footer,
+#pageControl,
+#homepage li span {
+  display: none;
+}

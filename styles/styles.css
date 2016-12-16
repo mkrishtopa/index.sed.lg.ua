@@ -1,0 +1,479 @@
+/*
+ (C)2005-2006 Michael Krishtopa aka Theo
+ theo at heddex dot com
+*/
+
+
+/*
+** BASE STYLES
+*/
+
+body {
+  font-size: 70%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0 0 2px 0;
+  background-color: #fff;
+}
+img {
+  border:0;
+  vertical-align: top;
+}
+table {
+  width: 100%;
+}
+td {
+  vertical-align: top;
+}
+form {
+  padding: 0;
+  margin: 0;
+}
+input, textarea {
+  border: 1px solid black;
+}
+input:focus, textarea:focus {
+  background-color: #f0f0f0;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #666;
+}
+a:link {
+  color: #666;
+}
+a:hover {
+  color: #000;
+}
+.color-red {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+** STRUCTURAL STYLES
+*/
+
+#wrapper {
+  background-image: url(/images/bg_main.gif);
+  background-repeat: repeat-y;
+  border-bottom: 1px solid #fff;
+  margin: 0 20px;
+}
+#column_left {
+  float: left;
+  width: 300px;
+}
+#column_right {
+  padding-left: 310px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+/*
+** HOMEPAGE STYLES
+*/
+
+#homepage ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 99%;
+}
+#homepage li {
+  line-height: 1.3em;
+  display: inline;
+  font-size: 100%;
+  color: #060;
+}
+#homepage li a {
+  color: #000;
+}
+#homepage li a:hover {
+  color: #060;
+  border-bottom: 1px solid #060;
+}
+
+* > #homepage ul {
+  list-style-type: list;
+  -moz-column-width: 19em;
+  -moz-column-gap: 1em;
+}
+* > #homepage li {
+  display: block;
+}
+* > #homepage li span {
+  display: none;
+}
+
+
+/*
+** LEFT COLUMN STYLES
+*/
+
+#column_left a {
+  border-bottom: 1px solid #ccc;
+}
+
+
+.infobox {
+  margin: 3px 7px 10px 12px;
+}
+.infobox ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.infobox li {
+  margin: 4px 0;
+}
+
+#news {
+  padding: 3px 0 0 0;
+}
+#news dl {
+  margin: 0;
+}
+#news dt {
+  font-weight: bold;
+  color: #006600;
+}
+#news dd {
+  margin: 0 0.5em 0.4em 1em;
+  color: #666;
+}
+#news .hotnews {
+  color: red;
+}
+#news .hotnews a {
+  color: red;
+}
+
+#searchform {
+  padding-top: 5px;
+}
+#searchform #textfield {
+  border: 1px solid #999;
+  width: 210px;
+  background-color: transparent;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#searchform #submit {
+  background-color: #006600;
+  font-size: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 50px;
+  height: 21px;
+  color: white;
+  border: 0;
+}
+#searchswitcher1, #searchswitcher2 {
+  border: 0;
+}
+
+#portlet-advert ul li:first-child {
+    font-weight: bold;
+}
+
+#lastadded {
+  text-transform: capitalize;
+}
+
+#partners-links {
+  margin-top: 25px;
+  padding-top: 10px;
+  border-top: 1px dotted #ccc;
+}
+#partners-links a {
+  display: block;
+  margin-bottom: 1em;
+  padding: 10px 0;
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+}
+#partners-links a img {
+  padding: 1px;
+  border: 0;
+}
+#partners-links .donate {
+  padding: 10px 0;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #ccc;
+}
+#admin {
+  padding-top: 5em;
+}
+#admin a {
+  color: #e2e2e2;
+  border: 0;
+}
+
+
+/*
+** RIGHT COLUMN STYLES
+*/
+
+#breadcrumbs {
+  font-size: 90%;
+  list-style-type: none;
+  padding: 0 1em 0 0em;
+  color: #777;
+  padding: 0.5em 0 1.5em 0;
+}
+#breadcrumbs a:link {
+  color: #999;
+}
+#breadcrumbs a:visited {
+  color: #999;
+}
+#breadcrumbs a:hover {
+  color: #000;
+}
+
+#message {
+  padding: 0.5em;
+  margin: 0.3em 0;
+  border: 1px dotted gray;
+  font-weight: bold;
+  background-color: #eee;
+  color: red;
+}
+
+#print_page {
+  display: block;
+  float: right;
+  margin-top: 3px;
+}
+
+.content {
+  padding-left: 0.5em;
+}
+.content h1 {
+  font-size: 120%;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 2px;
+  margin: 1.5em 0 7px 0;
+}
+.content h1 a:link, .content h1 a:visited {
+  color: #000;
+  text-decoration: none;
+  border: 0;
+}
+.content h2 {
+  color: black;
+  font-size: 110%;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 0.5em;
+}
+.content h3 {
+  color: black;
+  font-size: 100%;
+  font-weight: bold;
+}
+.content h4 {
+  color: black;
+  font-size: 90%;
+  font-weight: normal;
+}
+.content a {
+  color: #666;
+    border-bottom: 1px solid #666;
+}
+.content a:visited {
+  color: #000;
+}
+.content a:hover {
+  color: #008800;
+}
+.content dt {
+  line-height: 1.2em;
+  font-weight: bold;
+  padding: 0 0 4px 0;
+}
+.content dd {
+  line-height: 1.2em;
+  font-weight: normal;
+  padding-bottom: 5px;
+  margin-left: 2em;
+}
+.content li {
+  margin-bottom: 0.3em;
+}
+.content .firmlogo {
+  float: right;
+}
+.content .firmlogo img {
+  float: left;
+  clear: both;
+  margin: 0 0 1em 2em;
+}
+.image-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+#objectinfo {
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+#objectinfo td {
+  padding: 1em 1em 0 0;
+}
+.databit {
+  font-weight: bold;
+}
+#objectinfo a {
+  font-weight: normal;
+}
+#description {
+  text-align: justify;
+}
+#description p {
+  text-indent: 1em;
+}
+#description table {
+    border-spacing: 1px;
+}
+#description th {
+    padding: 0.25em 0.75em;
+    text-align: center;
+    background-color: #ccc;
+}
+#description td {
+    background-color: #eee;
+}
+
+#viewcounter {
+  font-size: 80%;
+  padding-top: 3em;
+  color: #888;
+  text-align: right;
+}
+
+
+/* Edit form styles */
+
+.widget textarea {
+  font-size: 120%;
+}
+.widget input[type=text] {
+  width: 45em;
+  font-size: 90%;
+}
+
+
+/* Full list page */
+
+table#fulllist {
+  width: 300px;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+  background-color: #eee;
+}
+table#fulllist th {
+  background-color: #006600;
+  text-align: center;
+  font-size:10px;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 3px;
+}
+table#fulllist th a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+table#fulllist td {
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 1px 2px;
+  font-size:9px;
+  font-family: Arial;
+}
+.odd {
+  background-color: #CCC;
+}
+table#fulllist tr:hover {
+  background-color: #fff;
+}
+
+
+.visualClear {
+  display: block;
+  clear: both;
+}
+
+
+#footer {
+  width: 100%;
+  height: 70px;
+  font-size: 80%;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #CCC;
+  background-image: url(/images/bg_footer.gif);
+  background-repeat: repeat-x;
+}
+#footer a {
+  color: #000;
+  text-decoration: none;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+td#copyrights {
+  padding-left: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+td#counter {
+  padding-top: 20px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  width: 100px;
+  text-align: center;
+}
+
+
+/* Banners and advert blocks */
+
+td#banner {
+  padding-top: 6px;
+  text-align: center;
+  width: 480px;
+}
+.advertBlock {
+  margin: 1em 0 0 0;
+  padding: 1em 0 1em 0;
+  border-top: 1px solid #ccc;
+}
+.advertBlock h3 {
+  color: #555;
+}
+#index_advert {
+  padding-top: 3em;
+  font-size: 90%;
+}
+
+
+/* IE Bugfixes */
+
+.content table {
+  font-size: 1em; /* IE5.5 bugfix */
+}
+
+/* 5, 5.5, 6 */
+* html #column_right table {
+  width: 400px!important;
+}
